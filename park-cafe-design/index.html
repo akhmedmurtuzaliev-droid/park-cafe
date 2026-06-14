@@ -1,0 +1,3171 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"
+    />
+    <meta name="theme-color" content="#0F1115" />
+    <title>РИМ КАФЕ — Доставка еды | Махачкала</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+      media="print"
+      onload="this.media = 'all'"
+    />
+    <link
+      rel="icon"
+      href="https://16a9564f-f8ec-42ba-a998-3027aa809e50.selstorage.ru/rim/45010/images/site/869cc174a49129444428977e56adfd40.PNG"
+      type="image/png"
+    />
+    <style>
+      :root {
+        --bg: #0f1115;
+        --s: #181b21;
+        --s2: #1e2128;
+        --s3: #252830;
+        --s4: #2a2d35;
+        --ac: #f4a64a;
+        --ah: #f5b366;
+        --am: rgba(244, 166, 74, 0.15);
+        --t: #fff;
+        --t2: #a3a3a3;
+        --t3: #6b6b6b;
+        --oa: #0f1115;
+        --ok: #4caf50;
+        --er: #f44336;
+        --bd: rgba(255, 255, 255, 0.08);
+        --bh: rgba(255, 255, 255, 0.12);
+        --sl: 0 8px 32px rgba(0, 0, 0, 0.5);
+        --sg: 0 0 20px rgba(244, 166, 74, 0.25);
+        --f: "Inter", -apple-system, sans-serif;
+        --fd: "Manrope", "SF Pro Display", sans-serif;
+        --rs: 8px;
+        --rm: 12px;
+        --rl: 16px;
+        --rxl: 20px;
+        --rf: 9999px;
+      }
+      *,
+      *::before,
+      *::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html {
+        font-size: 16px;
+        -webkit-font-smoothing: antialiased;
+      }
+      body {
+        font-family: var(--f);
+        background: var(--bg);
+        color: var(--t);
+        line-height: 1.5;
+        overflow-x: hidden;
+      }
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+      button {
+        font-family: inherit;
+        border: none;
+        cursor: pointer;
+        background: none;
+        -webkit-tap-highlight-color: transparent;
+      }
+      input {
+        font-family: inherit;
+        border: none;
+        outline: none;
+        background: none;
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+      }
+      ::-webkit-scrollbar {
+        display: none;
+      }
+      ::selection {
+        background: var(--ac);
+        color: var(--oa);
+      }
+
+      .ct {
+        width: 100%;
+        max-width: 1440px;
+        margin: 0 auto;
+        padding: 0 16px;
+      }
+
+      /* HEADER */
+      .hd {
+        padding: 12px 16px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+        position: sticky;
+        top: 0;
+        z-index: 200;
+        background: rgba(15, 17, 21, 0.98);
+        backdrop-filter: blur(16px);
+      }
+      .hd-logo {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        flex-shrink: 0;
+      }
+      .hd-logo img {
+        width: 48px;
+        height: 48px;
+        border-radius: 10px;
+        object-fit: cover;
+      }
+      .hd-logo-text {
+        font-family: var(--fd);
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 1.1;
+      }
+      .hd-logo-sub {
+        font-size: 9px;
+        color: var(--t2);
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+      }
+      .hd-addr {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        font-size: 12px;
+        color: var(--t2);
+        text-align: right;
+      }
+      .hd-addr svg {
+        color: var(--ac);
+        flex-shrink: 0;
+        width: 14px;
+        height: 14px;
+      }
+      .hd-addr strong {
+        color: var(--t);
+        font-weight: 500;
+        font-size: 12px;
+      }
+      .hd-menu {
+        width: 40px;
+        height: 40px;
+        background: var(--s2);
+        border-radius: var(--rm);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--t2);
+      }
+
+      /* SEARCH */
+      .srch {
+        margin: 0 16px 12px;
+        position: relative;
+      }
+      .srch input {
+        width: 100%;
+        padding: 12px 50px 12px 44px;
+        background: var(--s2);
+        border: 1px solid var(--bd);
+        border-radius: var(--rm);
+        color: var(--t);
+        font-size: 14px;
+      }
+      .srch input::placeholder {
+        color: var(--t3);
+      }
+      .srch input:focus {
+        border-color: var(--ac);
+      }
+      .srch-icon {
+        position: absolute;
+        left: 14px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: var(--t3);
+        pointer-events: none;
+      }
+      .srch-filter {
+        position: absolute;
+        right: 6px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 36px;
+        height: 36px;
+        background: var(--s3);
+        border-radius: var(--rs);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--t2);
+        cursor: pointer;
+      }
+
+      /* CATEGORY CHIPS */
+      .chips {
+        display: flex;
+        gap: 8px;
+        padding: 0 16px;
+        overflow-x: auto;
+        scrollbar-width: none;
+        margin-bottom: 16px;
+      }
+      .chips::-webkit-scrollbar {
+        display: none;
+      }
+      .chip {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        padding: 10px 16px;
+        background: var(--s2);
+        border: 1px solid var(--bd);
+        border-radius: var(--rf);
+        font-size: 13px;
+        color: var(--t2);
+        white-space: nowrap;
+        flex-shrink: 0;
+      }
+      .chip:hover {
+        background: var(--s3);
+        color: var(--t);
+      }
+      .chip.on {
+        background: var(--am);
+        border-color: var(--ac);
+        color: var(--ac);
+        font-weight: 500;
+      }
+      .chip-e {
+        font-size: 18px;
+      }
+
+      /* SECTION */
+      .sec {
+        padding: 0 16px 20px;
+      }
+      .sec-h {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 14px;
+      }
+      .sec-t {
+        font-family: var(--fd);
+        font-size: 22px;
+        font-weight: 700;
+      }
+      .sec-lk {
+        display: none;
+      }
+
+      /* FEATURED CARD */
+      .feat {
+        display: flex;
+        background: var(--s2);
+        border-radius: var(--rxl);
+        overflow: hidden;
+        gap: 16px;
+        padding: 16px;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+      .feat-img {
+        width: 160px;
+        height: 120px;
+        border-radius: var(--rm);
+        overflow: hidden;
+        flex-shrink: 0;
+        background: var(--s3);
+      }
+      .feat-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .feat-info {
+        flex: 1;
+        min-width: 0;
+      }
+      .feat-name {
+        font-size: 16px;
+        font-weight: 700;
+        margin-bottom: 4px;
+      }
+      .feat-desc {
+        font-size: 12px;
+        color: var(--t2);
+        margin-bottom: 10px;
+        line-height: 1.4;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
+      .feat-bottom {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 8px;
+      }
+      .feat-price {
+        font-size: 20px;
+        font-weight: 700;
+        color: var(--ac);
+      }
+      .feat-weight {
+        font-size: 12px;
+        color: var(--t3);
+      }
+      .feat-add {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        padding: 10px 16px;
+        background: var(--ac);
+        color: var(--oa);
+        font-size: 13px;
+        font-weight: 600;
+        border-radius: var(--rm);
+        white-space: nowrap;
+      }
+      .feat-add:hover {
+        background: var(--ah);
+      }
+      .feat-add svg {
+        width: 16px;
+        height: 16px;
+      }
+
+      /* PRODUCT CARDS - HORIZONTAL SCROLL */
+      .p-scroll {
+        display: flex;
+        gap: 12px;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        padding-bottom: 4px;
+      }
+      .p-scroll::-webkit-scrollbar {
+        display: none;
+      }
+      .p-card {
+        min-width: 200px;
+        max-width: 200px;
+        background: var(--s2);
+        border-radius: var(--rl);
+        overflow: hidden;
+        scroll-snap-align: start;
+        flex-shrink: 0;
+        cursor: pointer;
+        transition: transform 0.2s;
+      }
+      .p-card:hover {
+        transform: translateY(-2px);
+      }
+      .p-img {
+        position: relative;
+        aspect-ratio: 1;
+        background: var(--s3);
+      }
+      .p-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .p-heart {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        width: 28px;
+        height: 28px;
+        background: rgba(15, 17, 21, 0.6);
+        backdrop-filter: blur(8px);
+        border-radius: var(--rf);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--t2);
+      }
+      .p-heart.on {
+        color: var(--er);
+      }
+      .p-heart svg {
+        width: 14px;
+        height: 14px;
+      }
+      .p-info {
+        padding: 10px;
+      }
+      .p-name {
+        font-size: 13px;
+        font-weight: 600;
+        margin-bottom: 3px;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
+      .p-desc {
+        font-size: 11px;
+        color: var(--t3);
+        margin-bottom: 8px;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        line-height: 1.3;
+      }
+      .p-foot {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .p-price {
+        font-size: 15px;
+        font-weight: 700;
+      }
+      .p-plus {
+        width: 30px;
+        height: 30px;
+        background: var(--ac);
+        border-radius: var(--rf);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--oa);
+      }
+      .p-plus svg {
+        width: 16px;
+        height: 16px;
+      }
+
+      /* PROMO BANNER */
+      .promo {
+        margin: 0 16px 20px;
+        padding: 20px;
+        background: linear-gradient(135deg, var(--s2), var(--s));
+        border-radius: var(--rxl);
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        overflow: hidden;
+      }
+      .promo-txt {
+        flex: 1;
+      }
+      .promo-title {
+        font-family: var(--fd);
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 4px;
+      }
+      .promo-sub {
+        font-size: 12px;
+        color: var(--t2);
+      }
+      .promo-badge {
+        display: inline-block;
+        padding: 4px 10px;
+        background: var(--ac);
+        color: var(--oa);
+        font-size: 11px;
+        font-weight: 700;
+        border-radius: var(--rs);
+        margin-top: 8px;
+      }
+      .promo-img {
+        width: 100px;
+        height: 80px;
+        border-radius: var(--rm);
+        overflow: hidden;
+        flex-shrink: 0;
+      }
+      .promo-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      /* BOTTOM NAV */
+      .bn {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 300;
+        background: rgba(15, 17, 21, 0.98);
+        backdrop-filter: blur(16px);
+        border-top: 1px solid var(--bd);
+        padding: 6px 0;
+        padding-bottom: max(6px, env(safe-area-inset-bottom));
+      }
+      .bn-in {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+      }
+      .bni {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2px;
+        padding: 4px 8px;
+        color: var(--t3);
+        font-size: 10px;
+        font-weight: 500;
+        position: relative;
+        min-width: 56px;
+      }
+      .bni.on {
+        color: var(--ac);
+      }
+      .bni svg {
+        width: 22px;
+        height: 22px;
+      }
+      .bni .bdg {
+        position: absolute;
+        top: -2px;
+        right: 8px;
+        min-width: 16px;
+        height: 16px;
+        padding: 0 4px;
+        background: var(--ac);
+        color: var(--oa);
+        font-size: 9px;
+        font-weight: 700;
+        border-radius: var(--rf);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      body {
+        padding-bottom: 70px;
+      }
+
+      /* MODAL */
+      .mov {
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.7);
+        z-index: 400;
+        display: none;
+        align-items: flex-end;
+        justify-content: center;
+      }
+      .mov.on {
+        display: flex;
+      }
+      .modal {
+        width: 100%;
+        max-width: 500px;
+        max-height: 85vh;
+        background: var(--s);
+        border-radius: 20px 20px 0 0;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+      }
+      .modal-img {
+        width: 100%;
+        aspect-ratio: 4/3;
+        background: var(--s3);
+        overflow: hidden;
+        position: relative;
+      }
+      .modal-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .modal-close {
+        position: absolute;
+        top: 12px;
+        right: 12px;
+        width: 32px;
+        height: 32px;
+        background: rgba(15, 17, 21, 0.7);
+        backdrop-filter: blur(8px);
+        border-radius: var(--rf);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--t2);
+        z-index: 2;
+      }
+      .modal-body {
+        padding: 20px;
+        overflow-y: auto;
+        flex: 1;
+      }
+      .modal-name {
+        font-family: var(--fd);
+        font-size: 22px;
+        font-weight: 700;
+        margin-bottom: 6px;
+      }
+      .modal-desc {
+        font-size: 13px;
+        color: var(--t2);
+        line-height: 1.5;
+        margin-bottom: 16px;
+      }
+      .modal-meta {
+        display: flex;
+        gap: 16px;
+        margin-bottom: 20px;
+      }
+      .modal-meta span {
+        font-size: 13px;
+        color: var(--t3);
+      }
+      .modal-meta strong {
+        color: var(--t);
+      }
+      .modal-add {
+        width: 100%;
+        padding: 14px;
+        background: var(--ac);
+        color: var(--oa);
+        font-size: 15px;
+        font-weight: 700;
+        border-radius: var(--rm);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+      }
+      .modal-add:hover {
+        background: var(--ah);
+        box-shadow: var(--sg);
+      }
+
+      /* SHOW ALL */
+      .soov {
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.7);
+        z-index: 400;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        padding: 16px;
+      }
+      .soov.on {
+        display: flex;
+      }
+      .so {
+        width: 100%;
+        max-width: 1200px;
+        max-height: 90vh;
+        background: var(--s);
+        border-radius: var(--rxl);
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+      }
+      .soh {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 16px;
+        border-bottom: 1px solid var(--bd);
+      }
+      .sot {
+        font-family: var(--fd);
+        font-size: 18px;
+        font-weight: 700;
+      }
+      .soc {
+        width: 32px;
+        height: 32px;
+        background: var(--s2);
+        border-radius: var(--rf);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--t2);
+      }
+      .soc:hover {
+        background: var(--s3);
+        color: var(--t);
+      }
+      .sob {
+        padding: 16px;
+        overflow-y: auto;
+        flex: 1;
+      }
+      .sog {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+      }
+      .socat {
+        display: flex;
+        gap: 6px;
+        flex-wrap: wrap;
+        margin-bottom: 12px;
+      }
+      .soch {
+        padding: 6px 12px;
+        background: var(--s2);
+        border: 1px solid var(--bd);
+        border-radius: var(--rf);
+        font-size: 11px;
+        color: var(--t2);
+        cursor: pointer;
+      }
+      .soch:hover {
+        background: var(--s3);
+        color: var(--t);
+      }
+      .soch.on {
+        background: var(--ac);
+        border-color: var(--ac);
+        color: var(--oa);
+      }
+      .socn {
+        font-size: 12px;
+        color: var(--t3);
+        margin-bottom: 10px;
+      }
+
+      /* TOAST */
+      .toast {
+        position: fixed;
+        bottom: 90px;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 10px 20px;
+        background: var(--s3);
+        border: 1px solid var(--bd);
+        border-radius: var(--rf);
+        color: var(--t);
+        font-size: 13px;
+        font-weight: 500;
+        z-index: 500;
+        box-shadow: var(--sl);
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.25s;
+        white-space: nowrap;
+      }
+      .toast.on {
+        opacity: 1;
+        visibility: visible;
+      }
+
+      /* RESPONSIVE */
+      @media (min-width: 768px) {
+        .p-scroll {
+          flex-wrap: wrap;
+          overflow-x: visible;
+        }
+        .p-card {
+          min-width: calc(33.333% - 8px);
+          max-width: calc(33.333% - 8px);
+        }
+        .feat {
+          padding: 24px;
+        }
+        .feat-img {
+          width: 200px;
+          height: 150px;
+        }
+        .sog {
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+      @media (min-width: 1024px) {
+        .p-card {
+          min-width: calc(25% - 9px);
+          max-width: calc(25% - 9px);
+        }
+        .feat-img {
+          width: 240px;
+          height: 180px;
+        }
+        .sog {
+          grid-template-columns: repeat(4, 1fr);
+        }
+        .ct {
+          max-width: 1200px;
+        }
+      }
+      @media (min-width: 1440px) {
+        .ct {
+          max-width: 1400px;
+        }
+        .p-card {
+          min-width: calc(20% - 10px);
+          max-width: calc(20% - 10px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="hd">
+      <div class="hd-logo">
+        <img
+          src="https://16a9564f-f8ec-42ba-a998-3027aa809e50.selstorage.ru/rim/45010/images/site/d01366add6feee4354f98de9e88bdbf3.PNG"
+          alt="Рим Кафе"
+          width="48"
+          height="48"
+          loading="eager"
+          decoding="async"
+        />
+        <div>
+          <div class="hd-logo-text">РИМ КАФЕ</div>
+          <div class="hd-logo-sub">Park Cafe</div>
+        </div>
+      </div>
+      <div class="hd-addr">
+        <svg
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+          <circle cx="12" cy="10" r="3"></circle>
+        </svg>
+        <div><strong>Аскерханова 16,</strong><br />Махачкала</div>
+      </div>
+      <button class="hd-menu" onclick="openMenu()">
+        <svg
+          width="20"
+          height="20"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </header>
+
+    <div class="srch">
+      <svg
+        class="srch-icon"
+        width="18"
+        height="18"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+      >
+        <circle cx="11" cy="11" r="8"></circle>
+        <path d="M21 21l-4.35-4.35"></path>
+      </svg>
+      <input
+        type="text"
+        placeholder="Поиск блюд"
+        id="si"
+        autocomplete="off"
+        spellcheck="false"
+      />
+      <div class="srch-filter">
+        <svg
+          width="16"
+          height="16"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <line x1="4" y1="21" x2="4" y2="14"></line>
+          <line x1="4" y1="10" x2="4" y2="3"></line>
+          <line x1="12" y1="21" x2="12" y2="12"></line>
+          <line x1="12" y1="8" x2="12" y2="3"></line>
+          <line x1="20" y1="21" x2="20" y2="16"></line>
+          <line x1="20" y1="12" x2="20" y2="3"></line>
+          <line x1="1" y1="14" x2="7" y2="14"></line>
+          <line x1="9" y1="8" x2="15" y2="8"></line>
+          <line x1="17" y1="16" x2="23" y2="16"></line>
+        </svg>
+      </div>
+    </div>
+
+    <div class="chips" id="chips"></div>
+
+    <div class="ct" id="mainContent"></div>
+
+    <div class="soov" id="soMod">
+      <div class="so">
+        <div class="soh">
+          <h2 class="sot" id="soTt">Все блюда</h2>
+          <button class="soc" id="soCl">
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M18 6L6 18M6 6l12 12"></path>
+            </svg>
+          </button>
+        </div>
+        <div class="sob">
+          <div class="socat" id="soCats"></div>
+          <div class="socn" id="soCnt"></div>
+          <div class="sog" id="soG"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mov" id="pMod">
+      <div class="modal">
+        <div class="modal-img">
+          <button class="modal-close" id="mcl">
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M18 6L6 18M6 6l12 12"></path>
+            </svg></button
+          ><img id="mImg" src="" alt="" loading="lazy" />
+        </div>
+        <div class="modal-body">
+          <h2 class="modal-name" id="mName"></h2>
+          <p class="modal-desc" id="mDesc"></p>
+          <div class="modal-meta">
+            <span>Вес: <strong id="mWeight"></strong></span
+            ><span>Цена: <strong id="mPrice"></strong></span>
+          </div>
+          <button class="modal-add" id="mAdd">
+            <svg
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M12 5v14M5 12h14"></path>
+            </svg>
+            В корзину
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="mov" id="menuMod" style="align-items: center">
+      <div
+        style="
+          width: 100%;
+          max-width: 400px;
+          background: var(--s);
+          border-radius: 20px;
+          padding: 24px;
+          margin: 16px;
+        "
+      >
+        <div
+          style="
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+          "
+        >
+          <h2 style="font-family: var(--fd); font-size: 20px; font-weight: 700">
+            Меню
+          </h2>
+          <button
+            onclick="closeMenu()"
+            style="
+              width: 32px;
+              height: 32px;
+              background: var(--s2);
+              border-radius: 50%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              color: var(--t2);
+            "
+          >
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M18 6L6 18M6 6l12 12"></path>
+            </svg>
+          </button>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 4px">
+          <a
+            href="/"
+            style="
+              display: flex;
+              align-items: center;
+              gap: 12px;
+              padding: 14px;
+              border-radius: 12px;
+              color: var(--t);
+              font-size: 15px;
+              font-weight: 500;
+            "
+            ><svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+            </svg>
+            Главная</a
+          >
+          <a
+            href="tel:89285522363"
+            style="
+              display: flex;
+              align-items: center;
+              gap: 12px;
+              padding: 14px;
+              border-radius: 12px;
+              color: var(--t);
+              font-size: 15px;
+              font-weight: 500;
+            "
+            ><svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"
+              ></path>
+            </svg>
+            Позвонить</a
+          >
+          <button
+            onclick="
+              showCart();
+              closeMenu();
+            "
+            style="
+              display: flex;
+              align-items: center;
+              gap: 12px;
+              padding: 14px;
+              border-radius: 12px;
+              color: var(--t);
+              font-size: 15px;
+              font-weight: 500;
+              text-align: left;
+            "
+          >
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"
+              ></path>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <path d="M16 10a4 4 0 0 1-8 0"></path>
+            </svg>
+            Корзина
+          </button>
+          <button
+            onclick="
+              showFav();
+              closeMenu();
+            "
+            style="
+              display: flex;
+              align-items: center;
+              gap: 12px;
+              padding: 14px;
+              border-radius: 12px;
+              color: var(--t);
+              font-size: 15px;
+              font-weight: 500;
+              text-align: left;
+            "
+          >
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
+              ></path>
+            </svg>
+            Избранное
+          </button>
+        </div>
+        <div
+          style="
+            margin-top: 24px;
+            padding-top: 20px;
+            border-top: 1px solid var(--bd);
+          "
+        >
+          <div
+            style="
+              font-family: var(--fd);
+              font-size: 14px;
+              font-weight: 700;
+              margin-bottom: 12px;
+              color: var(--t);
+            "
+          >
+            РИМ КАФЕ
+          </div>
+          <div style="font-size: 13px; color: var(--t2); line-height: 1.6">
+            📍 Аскерханова 16, Махачкала, Дагестан<br />
+            📞
+            <a href="tel:89285522363" style="color: var(--ac)"
+              >8 (928) 552-23-63</a
+            ><br />
+            🕐 Ежедневно 10:00 — 22:45<br />
+            🚚 Доставка по Махачкале
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mov" id="cartMod" style="align-items: flex-end">
+      <div class="modal" style="max-height: 90vh">
+        <div class="modal-body" id="cartBody" style="padding: 20px">
+          <div
+            style="
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              margin-bottom: 16px;
+            "
+          >
+            <h2
+              style="font-family: var(--fd); font-size: 20px; font-weight: 700"
+            >
+              Корзина
+            </h2>
+            <button
+              onclick="closeCart()"
+              style="
+                width: 32px;
+                height: 32px;
+                background: var(--s2);
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: var(--t2);
+              "
+            >
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M18 6L6 18M6 6l12 12"></path>
+              </svg>
+            </button>
+          </div>
+          <div id="cartItems"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="toast" id="toast">
+      <svg
+        width="16"
+        height="16"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="var(--ok)"
+        stroke-width="2"
+      >
+        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+        <polyline points="22 4 12 14.01 9 11.01"></polyline>
+      </svg>
+      <span id="tMsg"></span>
+    </div>
+
+    <nav class="bn">
+      <div class="bn-in">
+        <a href="/" class="bni on"
+          ><svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+            <polyline points="9 22 9 12 15 12 15 22"></polyline></svg
+          ><span>Меню</span></a
+        >
+        <a
+          href="#"
+          class="bni"
+          onclick="
+            showCart();
+            return false;
+          "
+          ><svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path></svg
+          ><span>Корзина</span><span class="bdg" id="bnBdg">0</span></a
+        >
+        <a
+          href="#"
+          class="bni"
+          onclick="
+            showFav();
+            return false;
+          "
+          ><svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
+            ></path></svg
+          ><span>Избранное</span></a
+        >
+        <a href="tel:89285522363" class="bni"
+          ><svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"
+            ></path></svg
+          ><span>Звонок</span></a
+        >
+      </div>
+    </nav>
+
+    <script>
+      const IB =
+        "https://16a9564f-f8ec-42ba-a998-3027aa809e50.selstorage.ru/rim/45010/images/";
+      const TEL = "89285522363";
+      const TEL_FMT = "8 (928) 552-23-63";
+      function im(u) {
+        return u ? u + "?w=400&h=400&fit=crop&auto=format&q=60" : "";
+      }
+      function im100(u) {
+        return u ? u + "?w=100&h=100&fit=crop&auto=format&q=50" : "";
+      }
+
+      const CATS = [
+        { id: "all", e: "📊", n: "Все" },
+        { id: "shawarma", e: "🌯", n: "Шаурма-Гиро" },
+        { id: "pizza", e: "🍕", n: "Пицца" },
+        { id: "rolls-hot", e: "🔥", n: "Роллы горячие" },
+        { id: "rolls-cold", e: "🍣", n: "Роллы холодные" },
+        { id: "rolls-baked", e: "🧀", n: "Роллы запечённые" },
+        { id: "meat", e: "🥩", n: "Мясные блюда" },
+        { id: "chicken", e: "🍗", n: "Куриные блюда" },
+        { id: "salads", e: "🥗", n: "Салаты" },
+        { id: "fastfood", e: "🍔", n: "Фаст-фуд" },
+        { id: "flour", e: "🫓", n: "Мучное" },
+        { id: "bowls", e: "🥣", n: "Боулы" },
+        { id: "soups", e: "🍜", n: "Супы" },
+        { id: "wok", e: "🍝", n: "Вок" },
+        { id: "chudu", e: "🥧", n: "Чуду" },
+        { id: "nori", e: "🍙", n: "Нори маки" },
+        { id: "drinks", e: "🥤", n: "Напитки" },
+        { id: "sets", e: "🎁", n: "Наборы" },
+        { id: "sauces", e: "🫙", n: "Соусы" },
+      ];
+
+      const P = [
+        {
+          n: "Гиро-на тарелке",
+          p: 350,
+          w: "290 г",
+          cat: "shawarma",
+          d: "Сочное мясо, картофель фри, свежие овощи, соус и лепёшка",
+          img: IB + "items/f1675e3d05d5f02ea710aa17807bd9ec.JPEG",
+          b: ["hit"],
+          feat: true,
+        },
+        {
+          n: "Мясной пир",
+          p: 570,
+          w: "585 г",
+          cat: "pizza",
+          d: "Пепперони, ветчина, говядина, сыр моцарелла",
+          img: IB + "items/d254835d2fa049dafb57dd005118936d.JPEG",
+          b: ["hit"],
+        },
+        {
+          n: "Пицца Бургер",
+          p: 650,
+          w: "505 г",
+          cat: "pizza",
+          d: "Говяжий фарш, солёные огурцы, сыр, соус бургер",
+          img: IB + "items/fc4015934b817147797967e47836a97b.JPEG",
+          b: [],
+        },
+        {
+          n: "Пицца жгучая",
+          p: 460,
+          w: "555 г",
+          cat: "pizza",
+          d: "Острая пицца для любителей адреналина",
+          img: IB + "items/3d9f92fe116e64eb3f96c4badd148270.JPEG",
+          b: [],
+        },
+        {
+          n: "Пицца Горская",
+          p: 670,
+          w: "550 г",
+          cat: "pizza",
+          d: "Итальянская мука, дагестанская колбаса, моцарелла",
+          img: IB + "items/1be2d2c4a3fbf9a4e83a5bda45282bc0.JPEG",
+          b: ["hit"],
+        },
+        {
+          n: "Лахмаджун",
+          p: 380,
+          w: "300 г",
+          cat: "pizza",
+          d: "Тонкое тесто, лимон, фарш, помидор",
+          img: IB + "items/21c0ccbe70e3fc0a50a488e30071dd3e.JPEG",
+          b: [],
+        },
+        {
+          n: 'Пицца "Мясная с грибами"',
+          p: 495,
+          w: "550 г",
+          cat: "pizza",
+          d: "Томатный соус, говяжий фарш, шампиньоны, моцарелла",
+          img: IB + "items/07d27009cb478a692065194cce959d0b.JPEG",
+          b: [],
+        },
+        {
+          n: 'Пицца "Пеперони не острая"',
+          p: 520,
+          w: "550 г",
+          cat: "pizza",
+          d: "Классическая пепперони, моцарелла",
+          img: IB + "items/3e15eff9f3395cfadb7db9fbad5581f5.JPEG",
+          b: [],
+        },
+        {
+          n: "Цыпленок барбекю",
+          p: 480,
+          w: "550 г",
+          cat: "pizza",
+          d: "Курица барбекю, сыр моцарелла",
+          img: IB + "items/f11f805b4882a2cf2c7b7433e3dc6b2f.JPEG",
+          b: [],
+        },
+        {
+          n: 'Пицца "Маргарита"',
+          p: 440,
+          w: "550 г",
+          cat: "pizza",
+          d: "Дрожжевое тесто, томатный соус, помидоры, моцарелла",
+          img: IB + "items/25c3e57d038ceab43cffd35735b9ad43.JPEG",
+          b: ["hit"],
+        },
+        {
+          n: 'Пицца "Сицилийская"',
+          p: 540,
+          w: "550 г",
+          cat: "pizza",
+          d: "Говяжий фарш, халяльная колбаса, халапеньо, моцарелла",
+          img: IB + "items/a02a98faba0bc35c6597e60a027c5a5f.JPEG",
+          b: [],
+        },
+        {
+          n: 'Пицца "Куриная с грибами"',
+          p: 495,
+          w: "550 г",
+          cat: "pizza",
+          d: "Куриное филе, шампиньоны, помидоры, моцарелла",
+          img: IB + "items/c3ff7faa47c32581a43e570ce988ceec.JPEG",
+          b: [],
+        },
+        {
+          n: 'Пицца "4 сыра"',
+          p: 680,
+          w: "550 г",
+          cat: "pizza",
+          d: "Сырный соус, пармезан, моцарелла, эмменталь, чеддер",
+          img: IB + "items/4b76ff3fa953f15fd5861946090edeee.WEBP",
+          b: ["hit"],
+        },
+        {
+          n: "Хачапури",
+          p: 450,
+          w: "450 г",
+          cat: "pizza",
+          d: "Фирменное блюдо — ароматный и невероятно вкусный хачапури",
+          img: IB + "items/ef76d57b2b6eaa9261bd0acea63486d6.JPEG",
+          b: ["hit"],
+        },
+        {
+          n: 'Пицца "Цезарь"',
+          p: 520,
+          w: "550 г",
+          cat: "pizza",
+          d: "Куриное филе, соус цезарь, помидоры, моцарелла, салат",
+          img: IB + "items/4f3995f0a91100988a65b23bea508de7.JPEG",
+          b: [],
+        },
+        {
+          n: 'Пицца "Ассорти"',
+          p: 525,
+          w: "550 г",
+          cat: "pizza",
+          d: "Говяжий фарш, халяльная колбаса, шампиньоны, моцарелла",
+          img: IB + "items/4e2b9e5e9ef1ed1b58c44a7367dee18c.JPEG",
+          b: [],
+        },
+        {
+          n: 'Пицца "Ойси"',
+          p: 735,
+          w: "580 г",
+          cat: "pizza",
+          d: "Лосось, креветки, икра, Филадельфия, моцарелла, имбирь",
+          img: IB + "items/dd6eebff9a98fd0bc2b8bf4d7947aa06.JPEG",
+          b: ["hit"],
+        },
+        {
+          n: "Фокачча с сыром",
+          p: 140,
+          w: "350 г",
+          cat: "pizza",
+          d: "Сыр моцарелла, тесто",
+          img: IB + "items/85ca0ee7af8eafdfe326f2d9e43a1f12.JPEG",
+          b: [],
+        },
+        {
+          n: 'Пицца "Пеперони острая"',
+          p: 530,
+          w: "500 г",
+          cat: "pizza",
+          d: "Халяльная колбаса, халапеньо, моцарелла",
+          img: IB + "items/dececf1773d272782e477ff92a3c9b81.JPEG",
+          b: [],
+        },
+        {
+          n: "Пицца Жюльен",
+          p: 550,
+          w: "550 г",
+          cat: "pizza",
+          d: "Сливочный соус, куриное филе, шампиньоны, моцарелла",
+          img: IB + "items/f483f8ca9a0473a3b3dec27e75ec73af.JPEG",
+          b: [],
+        },
+        {
+          n: "Горячий Ойси",
+          p: 470,
+          w: "350 г",
+          cat: "rolls-hot",
+          d: "Филадельфия, лосось, огурец, спайси, унаги, креветки, тобико",
+          img: IB + "items/7a2f80ea22cf44b98a84cf3ac695c047.JPEG",
+          b: ["hit"],
+        },
+        {
+          n: "Тори Темпура",
+          p: 400,
+          w: "350 г",
+          cat: "rolls-hot",
+          d: "Запеченная курица, помидор, соус Цезарь, Филадельфия, тобико",
+          img: IB + "items/78c0e20faa730c6e465306e4b9f95df2.JPEG",
+          b: [],
+        },
+        {
+          n: "Япоша",
+          p: 480,
+          w: "350 г",
+          cat: "rolls-hot",
+          d: "Лосось, огурец, соус кимчи, Филадельфия, зеленый лук",
+          img: IB + "items/81ed40325b392a0cac5a7e3c7b5c978b.JPEG",
+          b: [],
+        },
+        {
+          n: "Ролл Цезарь с креветкой",
+          p: 430,
+          w: "350 г",
+          cat: "rolls-hot",
+          d: "Рис, нори, креветка, помидор, соус цезарь",
+          img: IB + "items/fe46ff31e8063e5c69e670a1cd85bdde.JPEG",
+          b: [],
+        },
+        {
+          n: "Ролл «Горячий шик» с лососем",
+          p: 430,
+          w: "350 г",
+          cat: "rolls-hot",
+          d: "Лосось в кляре, помидор, сливочный сыр, тобико, унаги, спайси",
+          img: IB + "items/445185004032c8d76f0615bbe6056a4d.JPEG",
+          b: [],
+        },
+        {
+          n: "Ролл Рим",
+          p: 480,
+          w: "350 г",
+          cat: "rolls-hot",
+          d: "Филадельфия, обжаренный лосось, помидор, тобико",
+          img: IB + "items/09ae21d09f81c83b81f39f068b0cb442.JPEG",
+          b: ["hit"],
+        },
+        {
+          n: "Ролл Цезарь с курицей",
+          p: 390,
+          w: "350 г",
+          cat: "rolls-hot",
+          d: "Запечённая курица, помидор, соус цезарь",
+          img: IB + "items/ac61c029c93e45b2017d6ea2825d3298.JPEG",
+          b: [],
+        },
+        {
+          n: "Ролл-пицца с курицей",
+          p: 450,
+          w: "350 г",
+          cat: "rolls-hot",
+          d: "Запечённая курица, помидор, соус цезарь, унаги, тобико",
+          img: IB + "items/8d916c413a7501f512f91e6b57c5eb1b.JPEG",
+          b: [],
+        },
+        {
+          n: "Горячий шик",
+          p: 440,
+          w: "350 г",
+          cat: "rolls-hot",
+          d: "Запечённая курица, помидор, соус цезарь, тобико, унаги, спайси",
+          img: IB + "items/445185004032c8d76f0615bbe6056a4d.JPEG",
+          b: [],
+        },
+        {
+          n: "Ролл-пицца с лососем",
+          p: 460,
+          w: "200 г",
+          cat: "rolls-hot",
+          d: "Лосось, огурец, спайси, унаги, тобико",
+          img: IB + "items/8d916c413a7501f512f91e6b57c5eb1b.JPEG",
+          b: [],
+        },
+        {
+          n: "Креветки в кляре",
+          p: 450,
+          w: "200 г",
+          cat: "rolls-hot",
+          d: "Тигровые креветки в хрустящем кляре с лимоном и соусом спайси",
+          img: IB + "items/974f45010bc9a67843a8b6ae70ed1e4f.JPEG",
+          b: [],
+        },
+        {
+          n: "Нежный",
+          p: 440,
+          w: "350 г",
+          cat: "rolls-hot",
+          d: "Филадельфия, лосось в кляре, огурец, тобико",
+          img: IB + "items/6f0d74f6f67b0f2994eae8fca703427c.JPEG",
+          b: [],
+        },
+        {
+          n: "Ролл Касаи",
+          p: 480,
+          w: "350 г",
+          cat: "rolls-cold",
+          d: "Ролл в стиле Касаи",
+          img: IB + "items/9166c01499ea02161825ad2f87793727.JPEG",
+          b: [],
+        },
+        {
+          n: "Калифорния с угрем",
+          p: 450,
+          w: "350 г",
+          cat: "rolls-cold",
+          d: "Калифорния с копченым угрем",
+          img: IB + "items/baddc1a5334665bd0ee54e64ecd93cd2.JPEG",
+          b: [],
+        },
+        {
+          n: "Калифорния с лососем",
+          p: 450,
+          w: "350 г",
+          cat: "rolls-cold",
+          d: "Нори, рис, огурец, лосось, Филадельфия, тобико",
+          img: IB + "items/c70253d93ce000bfee0b6f53e544697a.JPEG",
+          b: ["hit"],
+        },
+        {
+          n: "Рио",
+          p: 435,
+          w: "350 г",
+          cat: "rolls-cold",
+          d: "Филадельфия, жареный лосось, огурец, тобико, унаги",
+          img: IB + "items/d685cb578beed6776c932e470365cd34.JPEG",
+          b: [],
+        },
+        {
+          n: "Вегетарианский",
+          p: 380,
+          w: "350 г",
+          cat: "rolls-cold",
+          d: "Филадельфия, перец, огурец, помидор, листья салата",
+          img: IB + "items/258e14f2b2327ad328648030308ec523.JPEG",
+          b: [],
+        },
+        {
+          n: "Калифорния с крабом",
+          p: 400,
+          w: "350 г",
+          cat: "rolls-cold",
+          d: "Огурец, снежный краб, Филадельфия, тобико",
+          img: IB + "items/a6b0db064c36f41b85c13d53ecf3e665.JPEG",
+          b: [],
+        },
+        {
+          n: "Калифорния Шик",
+          p: 470,
+          w: "350 г",
+          cat: "rolls-cold",
+          d: "Филадельфия, лосось, огурец, тобико, спайс, унаги",
+          img: IB + "items/e596c3f11282cbb24fb8b03f1de17f6b.JPEG",
+          b: [],
+        },
+        {
+          n: "Спайс ролл",
+          p: 460,
+          w: "350 г",
+          cat: "rolls-cold",
+          d: "Филадельфия, лосось, огурец, спайси, кунжут",
+          img: IB + "items/c3273e8467d7b82112225db7226beeb3.JPEG",
+          b: [],
+        },
+        {
+          n: "Калифорния лайт",
+          p: 400,
+          w: "350 г",
+          cat: "rolls-cold",
+          d: "Филадельфия, снежный краб, огурец, тобико, кунжут",
+          img: IB + "items/45a9fefd4d1d58a1a4a5aa3131d1d88f.JPEG",
+          b: [],
+        },
+        {
+          n: "Бакинский вечер",
+          p: 410,
+          w: "300 г",
+          cat: "rolls-cold",
+          d: "Креветка, огурец, тобико, Филадельфия, унаги, спайс",
+          img: IB + "items/79e3975254779f0da82511aa910f82e9.JPEG",
+          b: ["hit"],
+        },
+        {
+          n: "Калифорния с креветками",
+          p: 450,
+          w: "350 г",
+          cat: "rolls-cold",
+          d: "Огурец, тигровая креветка, Филадельфия, тобико",
+          img: IB + "items/c9a2f7d6625140bc1ca6fdcce0bae884.JPEG",
+          b: [],
+        },
+        {
+          n: "Ролл Креветка люкс",
+          p: 480,
+          w: "350 г",
+          cat: "rolls-cold",
+          d: "Королевская креветка в кляре, тобико, фирменный соус, кунжут",
+          img: IB + "items/be4088d00e4b4e6aeeb9ff32cc3abeb9.JPEG",
+          b: [],
+        },
+        {
+          n: "Ойси",
+          p: 520,
+          w: "350 г",
+          cat: "rolls-cold",
+          d: "Креветки, Филадельфия, лосось, тобико, унаги, спайси",
+          img: IB + "items/81d88fc2f99159e801af13fd4da1d3df.JPEG",
+          b: ["hit"],
+        },
+        {
+          n: "Грин ролл",
+          p: 400,
+          w: "350 г",
+          cat: "rolls-cold",
+          d: "Куриное филе, огурец, сыр, помидор, спайси, Филадельфия",
+          img: IB + "items/284d037757f2c17570127c236cbdf7bf.JPEG",
+          b: [],
+        },
+        {
+          n: "Канада",
+          p: 450,
+          w: "350 г",
+          cat: "rolls-cold",
+          d: "Филадельфия, огурец, угорь, кунжут, унаги",
+          img: IB + "items/4cb9dbaddac2c2437d49aa108f23fa92.JPEG",
+          b: [],
+        },
+        {
+          n: "Калифорния люкс",
+          p: 440,
+          w: "350 г",
+          cat: "rolls-cold",
+          d: "Филадельфия, лосось, огурец, тобико",
+          img: IB + "items/be4088d00e4b4e6aeeb9ff32cc3abeb9.JPEG",
+          b: [],
+        },
+        {
+          n: "Филадельфия",
+          p: 450,
+          w: "350 г",
+          cat: "rolls-cold",
+          d: "Нори, рис, Филадельфия, лосось, огурец",
+          img: IB + "items/126554dbd7a77d519b90722ab46c3aba.JPEG",
+          b: ["hit"],
+        },
+        {
+          n: "Запеченый с жареным лососем",
+          p: 500,
+          w: "350 г",
+          cat: "rolls-baked",
+          d: "Запечённый ролл с лососем",
+          img: IB + "items/fe66339df50be62c9473fc3f97eeecf4.JPEG",
+          b: [],
+        },
+        {
+          n: "Запеченный ЦЕЗАРЬ С КРЕВЕТКОЙ",
+          p: 510,
+          w: "350 г",
+          cat: "rolls-baked",
+          d: "Тигровые креветки, помидор, спайси, моцарелла, Филадельфия, тобико",
+          img: IB + "items/39c9dddeab641aa227409c647f40794d.JPEG",
+          b: ["hit"],
+        },
+        {
+          n: "Запеченный ролл «Чикен»",
+          p: 480,
+          w: "350 г",
+          cat: "rolls-baked",
+          d: "Филадельфия, помидор, курица со спайси, Чеддер, кунжут, унаги",
+          img: IB + "items/82c1940bd63d346ed4336ac440e9f02e.JPEG",
+          b: [],
+        },
+        {
+          n: "Запеченный с угрем",
+          p: 480,
+          w: "350 г",
+          cat: "rolls-baked",
+          d: "Филадельфия, копченый угорь, огурец, унаги, кунжут",
+          img: IB + "items/9d405449798fc06d89c7354b16972d3e.JPEG",
+          b: [],
+        },
+        {
+          n: "Cенсей",
+          p: 480,
+          w: "350 г",
+          cat: "rolls-baked",
+          d: "Филадельфия, снежный краб, помидор, унаги, спайси, кунжут",
+          img: IB + "items/9d405449798fc06d89c7354b16972d3e.JPEG",
+          b: [],
+        },
+        {
+          n: "Запеченная Калифорния",
+          p: 520,
+          w: "350 г",
+          cat: "rolls-baked",
+          d: "Филадельфия, снежный краб, огурец, яки соус, тобико",
+          img: IB + "items/ab1a43794634bd7072761fc047b957fc.JPEG",
+          b: [],
+        },
+        {
+          n: "Запеченный ЦЕЗАРЬ С КУРИЦЕЙ",
+          p: 490,
+          w: "350 г",
+          cat: "rolls-baked",
+          d: "Запечённая курица, помидор, цезарь, моцарелла, Филадельфия, тобико",
+          img: IB + "items/39c9dddeab641aa227409c647f40794d.JPEG",
+          b: [],
+        },
+        {
+          n: "Запеченные с мидиями",
+          p: 450,
+          w: "350 г",
+          cat: "rolls-baked",
+          d: "Филадельфия, мидии, водоросли чука, унаги, яки соус, кунжут",
+          img: IB + "items/9d405449798fc06d89c7354b16972d3e.JPEG",
+          b: [],
+        },
+        {
+          n: "Запеченные с лососем",
+          p: 510,
+          w: "350 г",
+          cat: "rolls-baked",
+          d: "Филадельфия, лосось, яки соус, кунжут, барбекю, тобико",
+          img: IB + "items/c5e8f9289355ef8b9fd7449f713552dd.JPEG",
+          b: [],
+        },
+        {
+          n: "Ужин охотника",
+          p: 600,
+          w: "360 г",
+          cat: "meat",
+          d: "Мясное блюдо для настоящих охотников",
+          img: IB + "items/d89362a47aa80a8dbc670a91ba8de3d8.JPEG",
+          b: [],
+        },
+        {
+          n: "Филе миньон",
+          p: 840,
+          w: "210 г",
+          cat: "meat",
+          d: "Говяжья вырезка в сливочном соусе",
+          img: IB + "items/56da3849208c7bb1c21c32cefd6c0710.JPEG",
+          b: ["hit"],
+        },
+        {
+          n: "Нежная телятина под сырным соусом",
+          p: 640,
+          w: "500 г",
+          cat: "meat",
+          d: "Нежная телятина с сырным соусом",
+          img: IB + "items/5f04de9412b3f23d20a88003602a790f.JPEG",
+          b: [],
+        },
+        {
+          n: "Жаркое из говядины",
+          p: 430,
+          w: "500 г",
+          cat: "meat",
+          d: "Картофель, говядина, грибы, перец, помидоры, брокколи",
+          img: IB + "items/892146cf4ad0f5709618680efcaf2a4e.JPEG",
+          b: [],
+        },
+        {
+          n: "Бефстроганов из говядины",
+          p: 510,
+          w: "500 г",
+          cat: "meat",
+          d: "Картофельное пюре, говяжья вырезка, сливочный соус с грибами",
+          img: IB + "items/eecbd562ffec078fc9f17fb5e2159345.JPEG",
+          b: [],
+        },
+        {
+          n: "Курица по-французски",
+          p: 390,
+          w: "450 г",
+          cat: "chicken",
+          d: "Отбивная, майонез, помидор, моцарелла, картофель фри",
+          img: IB + "items/e1bd0a0f9725b93c83a84de77f644363.JPEG",
+          b: ["hit"],
+        },
+        {
+          n: "Курица по-арабски",
+          p: 390,
+          w: "450 г",
+          cat: "chicken",
+          d: "Отбивная, майонез, моцарелла, грецкий орех, фри",
+          img: IB + "items/a51b5201d0502ec824f1f167f8e4ab41.JPEG",
+          b: [],
+        },
+        {
+          n: "Курица по-европейски",
+          p: 390,
+          w: "450 г",
+          cat: "chicken",
+          d: "Отбивная в кляре, майонез, моцарелла, шампиньоны, фри",
+          img: IB + "items/3afb7279092b0eda60fbc5fd9ed7686e.JPEG",
+          b: [],
+        },
+        {
+          n: "Салат с хрустящими баклажанами",
+          p: 460,
+          w: "350 г",
+          cat: "salads",
+          d: "Хрустящие баклажаны с соусом",
+          img: IB + "items/e99687751df6155724492ac2bac97d93.JPEG",
+          b: [],
+        },
+        {
+          n: "Эгоист",
+          p: 480,
+          w: "400 г",
+          cat: "salads",
+          d: "Салат Эгоист",
+          img: IB + "items/19aef547400501b86da50c8a54897592.JPEG",
+          b: [],
+        },
+        {
+          n: "Салат Цезарь с креветками",
+          p: 360,
+          w: "460 г",
+          cat: "salads",
+          d: "Листья, цезарь, помидоры, креветки, сухарики, пармезан, лимон",
+          img: IB + "items/aa2beb7f65b9f2963c0865da46a73c29.JPEG",
+          b: [],
+        },
+        {
+          n: "Салат Цезарь с курицей",
+          p: 320,
+          w: "450 г",
+          cat: "salads",
+          d: "Листья, цезарь, помидоры, запеченная курица, сухарики, пармезан",
+          img: IB + "items/438a1798cc55e286bdf651056011339d.JPEG",
+          b: ["hit"],
+        },
+        {
+          n: "Салат Чука",
+          p: 220,
+          w: "300 г",
+          cat: "salads",
+          d: "Морские водоросли, соус унаги, кунжут, лимон",
+          img: IB + "items/b7290050036bcc673ba33ce98c917666.WEBP",
+          b: [],
+        },
+        {
+          n: "Салат по-домашнему с маслом",
+          p: 270,
+          w: "400 г",
+          cat: "salads",
+          d: "Растительное масло, помидор, огурец, лук, зелень",
+          img: IB + "items/e6ef1f069aaa8c57e510b35f91168021.JPEG",
+          b: [],
+        },
+        {
+          n: "Салат по-домашнему с майонезом",
+          p: 270,
+          w: "450 г",
+          cat: "salads",
+          d: "Помидор, огурцы, зелень, лук, майонез",
+          img: IB + "items/f806dcd95ef87907189ac49ced2d372d.JPEG",
+          b: [],
+        },
+        {
+          n: "Салат Греческий",
+          p: 320,
+          w: "400 г",
+          cat: "salads",
+          d: "Салат, помидор, огурец, фета, маслины, оливковое масло",
+          img: IB + "items/9f17751a8e457234d7bccb10bac9a3f8.JPEG",
+          b: [],
+        },
+        {
+          n: "Большой бургер с говяжьей котлетой",
+          p: 299,
+          w: "350 г",
+          cat: "fastfood",
+          d: "Булочка, соус, котлета, салат, помидор, огурец, чеддер",
+          img: IB + "items/6eaafa1cf58ef17de2dbf1963d226b66.JPEG",
+          b: ["hit"],
+        },
+        {
+          n: "Наггетсы",
+          p: 200,
+          w: "150 г",
+          cat: "fastfood",
+          d: "Хрустящие куриные наггетсы",
+          img: IB + "items/93f9c216827310ccbc0defa7c4f7d3da.JPEG",
+          b: [],
+        },
+        {
+          n: "Чикен микс",
+          p: 390,
+          w: "300 г",
+          cat: "fastfood",
+          d: "Микс из ножек и крылышек курицы с легкой остротой",
+          img: IB + "items/0f45f4118f8864bee5a93b36feea0151.JPEG",
+          b: [],
+        },
+        {
+          n: "Картофель по-деревенски",
+          p: 180,
+          w: "150 г",
+          cat: "fastfood",
+          d: "Хрустящий картофель по-деревенски",
+          img: IB + "items/a68bd4d49847fd2b09a1914daa56f6b2.JPEG",
+          b: [],
+        },
+        {
+          n: "Картофель фри",
+          p: 200,
+          w: "150 г",
+          cat: "fastfood",
+          d: "Хрустящий картофель фри",
+          img: IB + "items/1332980a339e4fb235cbf3ba8713a81a.JPEG",
+          b: [],
+        },
+        {
+          n: "Стрипсы 9шт",
+          p: 480,
+          w: "150 г",
+          cat: "fastfood",
+          d: "9 шт хрустящих стрипсов",
+          img: IB + "items/a45d31b9bc5f835f6c0281aa590d6b41.JPEG",
+          b: [],
+        },
+        {
+          n: "Большой бургер с куриной котлетой",
+          p: 299,
+          w: "250 г",
+          cat: "fastfood",
+          d: "Булочка, соус, куриная котлета, салат, помидор, чеддер",
+          img: IB + "items/182b4637958db6ae09702b023e66334c.JPEG",
+          b: [],
+        },
+        {
+          n: "Стрипсы 3шт",
+          p: 170,
+          w: "150 г",
+          cat: "fastfood",
+          d: "3 шт стрипсов",
+          img: IB + "items/a45d31b9bc5f835f6c0281aa590d6b41.JPEG",
+          b: [],
+        },
+        {
+          n: "Мясо сушеное",
+          p: 600,
+          w: "150 г",
+          cat: "flour",
+          d: "Сушеное мясо",
+          img: "",
+          b: [],
+        },
+        {
+          n: "Мясо говядина",
+          p: 490,
+          w: "150 г",
+          cat: "flour",
+          d: "Говядина",
+          img: "",
+          b: [],
+        },
+        {
+          n: "Курзе с мясом",
+          p: 500,
+          w: "300 г",
+          cat: "flour",
+          d: "Традиционное дагестанское курзе с мясом",
+          img: IB + "items/c00d8994172a00f634f6c1248c0d25db.WEBP",
+          b: ["hit"],
+        },
+        {
+          n: "Курзе яичное",
+          p: 500,
+          w: "300 г",
+          cat: "flour",
+          d: "Курзе яичное",
+          img: IB + "items/c00d8994172a00f634f6c1248c0d25db.WEBP",
+          b: [],
+        },
+        {
+          n: "Колбаса сушенная",
+          p: 600,
+          w: "450 г",
+          cat: "flour",
+          d: "Сушеная колбаса",
+          img: IB + "items/05ef53b25ab2196e67d0f026b7bfb3fa.WEBP",
+          b: [],
+        },
+        {
+          n: "Курзе с картошкой",
+          p: 480,
+          w: "450 г",
+          cat: "flour",
+          d: "Курзе с картошкой",
+          img: IB + "items/c00d8994172a00f634f6c1248c0d25db.WEBP",
+          b: [],
+        },
+        {
+          n: "Аварский хинкал",
+          p: 220,
+          w: "450 г",
+          cat: "flour",
+          d: "Традиционный аварский хинкал",
+          img: IB + "items/34c71feb63af5eb31497103629597bcf.WEBP",
+          b: ["hit"],
+        },
+        {
+          n: "Боул с семгой",
+          p: 490,
+          w: "500 г",
+          cat: "bowls",
+          d: "Рис, брокколи, черри, авокадо, салат микс, семга, лимон",
+          img: IB + "items/88edcb43da7c02e93d179ff72a77fbbc.JPEG",
+          b: ["hit"],
+        },
+        {
+          n: "Боул с креветками",
+          p: 450,
+          w: "500 г",
+          cat: "bowls",
+          d: "Креветки, рис, кукуруза, персик, черри, авокадо, спайси",
+          img: IB + "items/2099dbfa6507101088ecb5bf7bcba5e9.JPEG",
+          b: [],
+        },
+        {
+          n: "Боул с курицей",
+          p: 420,
+          w: "500 г",
+          cat: "bowls",
+          d: "Куриное филе, киноа, брокколи, апельсин, черри, терияки",
+          img: IB + "items/0bd85b8119c265dd5895d07a0c596610.JPEG",
+          b: [],
+        },
+        {
+          n: "Рассольник",
+          p: 420,
+          w: "1000 г",
+          cat: "soups",
+          d: "Классический рассольник",
+          img: "",
+          b: [],
+        },
+        {
+          n: "Суп куриный с тефтельками",
+          p: 440,
+          w: "1000 г",
+          cat: "soups",
+          d: "Куриный суп с тефтельками",
+          img: "",
+          b: [],
+        },
+        {
+          n: "Шурпа с говядиной",
+          p: 450,
+          w: "500 г",
+          cat: "soups",
+          d: "Говядина, картофель, бульон, булгур",
+          img: IB + "items/7d4c1140ac988ea7c2f8026630bd159e.JPEG",
+          b: [],
+        },
+        {
+          n: "Горский суп",
+          p: 610,
+          w: "500 г",
+          cat: "soups",
+          d: "Традиционный горский суп",
+          img: IB + "items/2ca5889d7fe6724383e96b4896cbde13.JPEG",
+          b: ["hit"],
+        },
+        {
+          n: "Уха по-царски",
+          p: 450,
+          w: "500 г",
+          cat: "soups",
+          d: "Роскошная уха",
+          img: IB + "items/8760d294786fcde4e054068038aeaeda.JPEG",
+          b: [],
+        },
+        {
+          n: "Лагман",
+          p: 320,
+          w: "500 г",
+          cat: "soups",
+          d: "Традиционный лагман",
+          img: IB + "items/82ffdaa086842f62e0f599d4d15a7708.WEBP",
+          b: [],
+        },
+        {
+          n: "Куриный суп с лапшой",
+          p: 290,
+          w: "500 г",
+          cat: "soups",
+          d: "Лапша, филе, вермишель, картофель",
+          img: IB + "items/29e6782a11db672b5565edcea96896ec.JPEG",
+          b: [],
+        },
+        {
+          n: "Том Ям",
+          p: 460,
+          w: "500 мл",
+          cat: "soups",
+          d: "Тигровые креветки, лосось, мидии, шампиньоны, кокосовое молоко",
+          img: IB + "items/0d177b709d416f69c98a532528dcd253.JPEG",
+          b: ["hit"],
+        },
+        {
+          n: "Фетучини с лососем",
+          p: 450,
+          w: "300 г",
+          cat: "wok",
+          d: "Паста фетучини с лососем",
+          img: IB + "items/14f83c4824b5b40efdb09ac16b095f59.WEBP",
+          b: [],
+        },
+        {
+          n: "Гречневая лапша соба с овощами",
+          p: 280,
+          w: "400 г",
+          cat: "wok",
+          d: "Гречневая лапша, микс овощей, унаги, соевый соус",
+          img: IB + "items/56983dd62e50e873f7043e58b1534c33.JPEG",
+          b: [],
+        },
+        {
+          n: "Гречневая лапша соба с креветками",
+          p: 380,
+          w: "400 г",
+          cat: "wok",
+          d: "Гречневая лапша, креветки, микс овощей, унаги, соевый соус",
+          img: IB + "items/e6279c8b051f2dea4cbde318213fe481.JPEG",
+          b: [],
+        },
+        {
+          n: "Фетучини с курицей",
+          p: 350,
+          w: "400 г",
+          cat: "wok",
+          d: "Паста, куриное филе, грибы, сливки, пармезан, песто",
+          img: IB + "items/2b6fcdb5cda796fbabf07e08c0726d1d.JPEG",
+          b: [],
+        },
+        {
+          n: "Фетучини с креветками",
+          p: 380,
+          w: "450 г",
+          cat: "wok",
+          d: "Паста, креветки, грибы, сливки, пармезан, песто",
+          img: IB + "items/7c8d5ed4f5db269fe704ed403020f7b5.JPEG",
+          b: [],
+        },
+        {
+          n: "Удон с креветками",
+          p: 380,
+          w: "450 г",
+          cat: "wok",
+          d: "Пшеничная лапша, креветки, микс овощей, унаги, соевый соус",
+          img: IB + "items/c0ad2843d8e2ebbcfed4aac44c39cf3c.JPEG",
+          b: [],
+        },
+        {
+          n: "Удон с курицей",
+          p: 320,
+          w: "400 г",
+          cat: "wok",
+          d: "Пшеничная лапша, куриное филе, микс овощей, унаги, соевый соус",
+          img: IB + "items/bbb64b5458630b47df821bf986f80a26.JPEG",
+          b: [],
+        },
+        {
+          n: "Гречневая лапша соба с курицей",
+          p: 320,
+          w: "400 г",
+          cat: "wok",
+          d: "Гречневая лапша, куриное филе, микс овощей, унаги, соевый соус",
+          img: IB + "items/f275f3b55c5348f0be4cb0785d1a6f88.JPEG",
+          b: [],
+        },
+        {
+          n: "Даргинское чуду",
+          p: 580,
+          w: "800 г",
+          cat: "chudu",
+          d: "Традиционное даргинское чуду",
+          img: IB + "items/764b13a2e52ce6157918ff804e6cde05.JPEG",
+          b: ["hit"],
+        },
+        {
+          n: "Къячи",
+          p: 550,
+          w: "550 г",
+          cat: "chudu",
+          d: "Дагестанское блюдо къячи",
+          img: IB + "items/a7bcfaa438e24cee1da3357dee47b216.JPEG",
+          b: [],
+        },
+        {
+          n: "Осетинский пирог",
+          p: 490,
+          w: "500 г",
+          cat: "chudu",
+          d: "Традиционный осетинский пирог",
+          img: IB + "items/c55623073d6ad019c9fc40d6559aea9f.WEBP",
+          b: [],
+        },
+        {
+          n: "Чуду открытое",
+          p: 390,
+          w: "500 г",
+          cat: "chudu",
+          d: "Открытое чуду с начинкой",
+          img: IB + "items/ea5ed9bb952090a8e11f962656752907.WEBP",
+          b: [],
+        },
+        {
+          n: "Нори маки с угрем",
+          p: 240,
+          w: "250 г",
+          cat: "nori",
+          d: "Нори маки с копченым угрем",
+          img: IB + "items/5b0066ca64e3d78100b109e986f3cc80.JPEG",
+          b: [],
+        },
+        {
+          n: "Нори маки с чука",
+          p: 190,
+          w: "250 г",
+          cat: "nori",
+          d: "Нори маки с водорослями чука",
+          img: IB + "items/695872f66490b7a0a0c895bd5341ba26.JPEG",
+          b: [],
+        },
+        {
+          n: "Нори маки с лососем",
+          p: 240,
+          w: "250 г",
+          cat: "nori",
+          d: "Нори маки с лососем",
+          img: IB + "items/0f2d99686ec91db70753245d2240095f.JPEG",
+          b: [],
+        },
+        {
+          n: "Онигири с креветкой",
+          p: 210,
+          w: "250 г",
+          cat: "nori",
+          d: "Онигири с креветкой",
+          img: IB + "items/9ebebbb75f231d382475cbc3e0189ba0.JPEG",
+          b: [],
+        },
+        {
+          n: "Нори маки с огурцом",
+          p: 160,
+          w: "250 г",
+          cat: "nori",
+          d: "Нори маки с огурцом",
+          img: IB + "items/9728ed4a6aae97bb274d7fb10b7fbdad.JPEG",
+          b: [],
+        },
+        {
+          n: "Онигири с лососем",
+          p: 210,
+          w: "250 г",
+          cat: "nori",
+          d: "Рис, лист нори, соус Яки лосось",
+          img: IB + "items/16519a7ec28b1def0f5071bb2aefc1ac.JPEG",
+          b: [],
+        },
+        {
+          n: "Нори маки с крабом",
+          p: 180,
+          w: "250 г",
+          cat: "nori",
+          d: "Лист нори, краб, рис",
+          img: IB + "items/3288d6028ca29cdd9f41238bdae77dad.JPEG",
+          b: [],
+        },
+        {
+          n: "Нори маки с креветкой",
+          p: 210,
+          w: "250 г",
+          cat: "nori",
+          d: "Лист нори, рис, креветка",
+          img: IB + "items/0932bfa5b87d88b9d6c0769f7cee9a78.JPEG",
+          b: [],
+        },
+        {
+          n: "Онигири с курицей",
+          p: 150,
+          w: "250 г",
+          cat: "nori",
+          d: "Рис, лист нори, соус Яки, курица",
+          img: IB + "items/cb4cfa578980bc6be70bfc5fb6034a2d.JPEG",
+          b: [],
+        },
+        {
+          n: "Barinoff апельсин",
+          p: 100,
+          w: "230 мл",
+          cat: "drinks",
+          d: "Сок Barinoff апельсин",
+          img: IB + "items/f77138b892c17678b1c2c7768855e78e.JPEG",
+          b: [],
+        },
+        {
+          n: "Barinoff яблоко",
+          p: 100,
+          w: "250 мл",
+          cat: "drinks",
+          d: "Сок Barinoff яблоко",
+          img: IB + "items/e29d465bf77801730dc699dd227177ee.JPEG",
+          b: [],
+        },
+        {
+          n: "Kinza лайм",
+          p: 95,
+          w: "330 мл",
+          cat: "drinks",
+          d: "Kinza лайм",
+          img: IB + "items/099840beafa49e98463217fc7c33ad53.JPEG",
+          b: [],
+        },
+        {
+          n: "Добрый кола 0,33",
+          p: 95,
+          w: "330 мл",
+          cat: "drinks",
+          d: "Добрый кола 0,33л",
+          img: IB + "items/baf8fcc8197620f4ed13b8f64cc11ce8.JPEG",
+          b: [],
+        },
+        {
+          n: "Добрый кола 1.5л",
+          p: 180,
+          w: "1500 мл",
+          cat: "drinks",
+          d: "Добрый кола 1.5л",
+          img: IB + "items/59c00bad12bcea7239a9476d289dba78.JPEG",
+          b: [],
+        },
+        {
+          n: "Добрый кола 1л",
+          p: 160,
+          w: "1000 мл",
+          cat: "drinks",
+          d: "Добрый кола 1л",
+          img: IB + "items/59c00bad12bcea7239a9476d289dba78.JPEG",
+          b: [],
+        },
+        {
+          n: "Добрый кола zero 0,33",
+          p: 95,
+          w: "330 мл",
+          cat: "drinks",
+          d: "Добрый кола zero 0,33л",
+          img: IB + "items/e53d1a9ce5f8202fff21ccf8d7fe2177.WEBP",
+          b: [],
+        },
+        {
+          n: "Fanta 0,33",
+          p: 95,
+          w: "330 мл",
+          cat: "drinks",
+          d: "Fanta 0,33л",
+          img: IB + "items/1a9286bc2ecfde97f508b341177d454f.JPEG",
+          b: [],
+        },
+        {
+          n: "Kinza zero",
+          p: 95,
+          w: "330 мл",
+          cat: "drinks",
+          d: "Kinza zero 0,33л",
+          img: IB + "items/c3513b941bf0dd740e52c04f804fc0ad.JPEG",
+          b: [],
+        },
+        {
+          n: "Хелси кола (Дубай)",
+          p: 95,
+          w: "250 мл",
+          cat: "drinks",
+          d: "Хелси кола Дубай",
+          img: IB + "items/af3503c591559bd91e3756465a3d9d5c.JPEG",
+          b: [],
+        },
+        {
+          n: "Компот курага",
+          p: 100,
+          w: "500 мл",
+          cat: "drinks",
+          d: "Компот из кураги",
+          img: IB + "items/107629da1d6d2727f2287dd87a29d9e3.WEBP",
+          b: [],
+        },
+        {
+          n: "Barinoff вишня",
+          p: 100,
+          w: "330 мл",
+          cat: "drinks",
+          d: "Сок Barinoff вишня",
+          img: IB + "items/80baba9aec7eec09b71ca84254ba6e92.JPEG",
+          b: [],
+        },
+        {
+          n: "Barinoff манго",
+          p: 100,
+          w: "250 мл",
+          cat: "drinks",
+          d: "Сок Barinoff манго",
+          img: IB + "items/a03c6ab35f3f2dbf812c897cf0f388e3.JPEG",
+          b: [],
+        },
+        {
+          n: "Barinoff Мультик",
+          p: 100,
+          w: "250 мл",
+          cat: "drinks",
+          d: "Barinoff Мультик 0,25",
+          img: IB + "items/606fc73a4fb811555ab176837c5bb180.WEBP",
+          b: [],
+        },
+        {
+          n: "Barinoff Персик",
+          p: 100,
+          w: "250 мл",
+          cat: "drinks",
+          d: "Barinoff Персик 0,25",
+          img: IB + "items/a03c6ab35f3f2dbf812c897cf0f388e3.JPEG",
+          b: [],
+        },
+        {
+          n: "Coca-Cola Zero 0,33",
+          p: 130,
+          w: "330 мл",
+          cat: "drinks",
+          d: "Coca-Cola Zero 0,33л",
+          img: IB + "items/50aa6dd86be780284ecd1f8464256c9a.PNG",
+          b: [],
+        },
+        {
+          n: "Cola 1л",
+          p: 180,
+          w: "1000 мл",
+          cat: "drinks",
+          d: "Cola 1л",
+          img: IB + "items/c48b33f5953c7eb15126fc2742eb80fd.JPEG",
+          b: [],
+        },
+        {
+          n: "Cola 2л",
+          p: 220,
+          w: "2000 мл",
+          cat: "drinks",
+          d: "Cola 2л",
+          img: IB + "items/c48b33f5953c7eb15126fc2742eb80fd.JPEG",
+          b: [],
+        },
+        {
+          n: "Cola original 0.33",
+          p: 95,
+          w: "330 мл",
+          cat: "drinks",
+          d: "Cola original 0,33л",
+          img: IB + "items/d79af85f8a86ac19e5578ff1a6143fb5.PNG",
+          b: [],
+        },
+        {
+          n: "Kinza кола 0.33",
+          p: 95,
+          w: "330 мл",
+          cat: "drinks",
+          d: "Kinza кола 0,33л",
+          img: IB + "items/43e978d6d36760055eed1d835da966d6.JPEG",
+          b: [],
+        },
+        {
+          n: "Kinza черная смородина 0.33",
+          p: 95,
+          w: "330 мл",
+          cat: "drinks",
+          d: "Kinza черная смородина",
+          img: IB + "items/a2026e677608a1dfe42a450d7290d782.PNG",
+          b: [],
+        },
+        {
+          n: "Sprite 0.33",
+          p: 100,
+          w: "330 мл",
+          cat: "drinks",
+          d: "Sprite 0,33л",
+          img: IB + "items/7575a30f33fdcbd7f8b804353ccf4562.JPEG",
+          b: [],
+        },
+        {
+          n: "Компот ягодный",
+          p: 180,
+          w: "1000 мл",
+          cat: "drinks",
+          d: "Компот ягодный 1л",
+          img: IB + "items/ac1cedba2e680f877fdf7df2ecec3b8a.JPEG",
+          b: [],
+        },
+        {
+          n: "Натуральный сок",
+          p: 180,
+          w: "1000 мл",
+          cat: "drinks",
+          d: "Натуральный сок 1л",
+          img: IB + "items/ad042a6846a6f04a7289763f55a38ec5.WEBP",
+          b: [],
+        },
+        {
+          n: "Barinoff гранат",
+          p: 100,
+          w: "250 мл",
+          cat: "drinks",
+          d: "Сок Barinoff гранат",
+          img: IB + "items/3a027c3429214a9c9ee9b810a2b982d1.JPEG",
+          b: [],
+        },
+        {
+          n: "Сет Лайт",
+          p: 1450,
+          w: "950 г",
+          cat: "sets",
+          d: "Цезарь-12шт, Калифорния Лайт-8шт, Калифорния Люкс-8шт, Нори-маки-8шт",
+          img: IB + "items/c0c9662190e162d640e18dfa178a5af5.JPEG",
+          b: [],
+        },
+        {
+          n: "Сет Пятничный",
+          p: 1450,
+          w: "950 г",
+          cat: "sets",
+          d: "Цезарь-12шт, Гурман-12шт, ойси-8шт, Калифорния-8шт, Нори-8шт",
+          img: IB + "items/40a5196375a15895b12794f341406a97.JPEG",
+          b: [],
+        },
+        {
+          n: "БОЛЬШОЙ НАБОР БУРГЕРОВ",
+          p: 1590,
+          w: "1000 г",
+          cat: "sets",
+          d: "Бургер-3, деревенски-2, фри-2, наггетсы-12, кетчуп-3",
+          img: IB + "items/6994fe4142ca845dd5ef7865ffdfdfbf.WEBP",
+          b: ["hit"],
+        },
+        {
+          n: "Сет «Горячий»",
+          p: 1990,
+          w: "1000 г",
+          cat: "sets",
+          d: "Цезарь курица 12шт, Цезарь креветки 12шт, Темпура 12шт, Япония 12шт, Гурман 12шт",
+          img: IB + "items/613231d49a8493f467821d4766d2547d.JPEG",
+          b: [],
+        },
+        {
+          n: "СЕТ ПИКНИК",
+          p: 1650,
+          w: "1000 г",
+          cat: "sets",
+          d: "Пицца Куриная с грибами, Маргарита, Цезарь-12шт, Фила-8шт, Чикен-8шт, Фри",
+          img: IB + "items/10018423b28c4a9daf67dea367233a0f.JPEG",
+          b: [],
+        },
+        {
+          n: "Сет Премиум",
+          p: 1900,
+          w: "1000 г",
+          cat: "sets",
+          d: "Цезарь-12шт, Горячий шик-12шт, Ойси-8шт, Канада-8шт, Бакинский вечер-8шт",
+          img: IB + "items/014bf1679671307837b981cb766de4be.JPEG",
+          b: [],
+        },
+        {
+          n: "Сет ФИРМЕННЫЙ",
+          p: 2150,
+          w: "1000 г",
+          cat: "sets",
+          d: "Цезарь-12шт, Япоша-12шт, Фила-8шт, Канада-8шт, Грин-8шт, Калифорния-8шт",
+          img: IB + "items/726c894bd921e38bde60dcfc0156f602.WEBP",
+          b: [],
+        },
+        {
+          n: "Комбо ВСЕ ВКЛЮЧЕНО",
+          p: 2280,
+          w: "1000 г",
+          cat: "sets",
+          d: "Пеперони 30см, Куриная с грибами 30см, Цезарь 30см, Гурман, Фила, Фри, Наггетсы",
+          img: IB + "items/5d2294f292ad55f6643a39ebbeaf1dd7.WEBP",
+          b: [],
+        },
+        {
+          n: "Сет «Большой»",
+          p: 1850,
+          w: "1000 г",
+          cat: "sets",
+          d: "Цезарь-12шт, Япония-12шт, Ойси-8шт, Калифорния-8шт, Фила-8шт, Нори-8шт",
+          img: IB + "items/fd94d9a8b4cf455278c4e7dcdae8c285.JPEG",
+          b: [],
+        },
+        {
+          n: "Комбо Рим",
+          p: 749,
+          w: "750 г",
+          cat: "sets",
+          d: "Бургер, стрипсы, сырные палочки, фри, кетчуп, сырный, кола",
+          img: IB + "items/128445acf385b439f414b6c601e19618.WEBP",
+          b: ["hit"],
+        },
+        {
+          n: "МЕГА СЕТ",
+          p: 2990,
+          w: "1000 г",
+          cat: "sets",
+          d: "Цезарь курица 12шт, Цезарь креветка 12шт, Ойси 8шт, Фила 8шт, Калифорния 8шт, Чикен 8шт, Нори 8шт",
+          img: IB + "items/10335e6043a52147e967176f315f85b1.JPEG",
+          b: [],
+        },
+        {
+          n: "Сет «Малый»",
+          p: 1150,
+          w: "1000 г",
+          cat: "sets",
+          d: "Цезарь-12шт, Цезарь креветки-12шт, Рио-4шт, Фила-4шт, Нори-6шт",
+          img: IB + "items/e42bd6ca083cf55a3e849b54a09ad9b1.WEBP",
+          b: [],
+        },
+        {
+          n: "Имбирь",
+          p: 20,
+          w: "20 г",
+          cat: "sauces",
+          d: "Маринованный имбирь",
+          img: IB + "items/29799109ea57bf95776b87bb24ed0ace.JPEG",
+          b: [],
+        },
+        {
+          n: "Соевый соус",
+          p: 30,
+          w: "25 мл",
+          cat: "sauces",
+          d: "Соевый соус",
+          img: IB + "items/51b40b7f2558458dc71cd78c2f889488.JPEG",
+          b: [],
+        },
+        {
+          n: "Спайси соус",
+          p: 30,
+          w: "25 мл",
+          cat: "sauces",
+          d: "Спайси соус",
+          img: IB + "items/5c5b6bc09f98aaaa0a14ae95f175e30e.JPEG",
+          b: [],
+        },
+        {
+          n: "Васаби",
+          p: 20,
+          w: "25 г",
+          cat: "sauces",
+          d: "Васаби",
+          img: IB + "items/82c2ae7870da1a8f9e8d13651f62d4fb.JPEG",
+          b: [],
+        },
+        {
+          n: "Тобико",
+          p: 30,
+          w: "10 г",
+          cat: "sauces",
+          d: "Икра тобико",
+          img: IB + "items/740854f6a397dde6e0b37ae2a2be9b95.JPEG",
+          b: [],
+        },
+        {
+          n: "Кетчуп",
+          p: 30,
+          w: "25 мл",
+          cat: "sauces",
+          d: "Кетчуп",
+          img: IB + "items/9b0266159bc66a501b2586a9adf7997f.JPEG",
+          b: [],
+        },
+        {
+          n: "Ореховый соус",
+          p: 50,
+          w: "25 мл",
+          cat: "sauces",
+          d: "Ореховый соус",
+          img: IB + "items/c5c3f357ab2f505fc99e337c3fc1ef2d.JPEG",
+          b: [],
+        },
+        {
+          n: "Сырный соус",
+          p: 30,
+          w: "25 мл",
+          cat: "sauces",
+          d: "Сырный соус",
+          img: IB + "items/ae6e1866db378773ebb5a87a269ffcf5.JPEG",
+          b: [],
+        },
+        {
+          n: "Унаги соус",
+          p: 30,
+          w: "25 мл",
+          cat: "sauces",
+          d: "Унаги соус",
+          img: IB + "items/eae0951fce83c60e5362840266a4c769.JPEG",
+          b: [],
+        },
+      ];
+
+      const CAT_COUNTS = {};
+      P.forEach((p) => {
+        CAT_COUNTS[p.cat] = (CAT_COUNTS[p.cat] || 0) + 1;
+      });
+
+      class App {
+        constructor() {
+          this.cart = [];
+          this.fav = new Set();
+          this.curCat = "all";
+          this.soCat = "all";
+          this.init();
+        }
+        init() {
+          this.renderChips();
+          this.renderMain();
+          this.bind();
+        }
+        bind() {
+          document
+            .getElementById("si")
+            ?.addEventListener("input", (e) => this.search(e.target.value));
+          document
+            .getElementById("mcl")
+            ?.addEventListener("click", () => this.closeM());
+          document.getElementById("pMod")?.addEventListener("click", (e) => {
+            if (e.target.classList.contains("mov")) this.closeM();
+          });
+          document
+            .getElementById("soCl")
+            ?.addEventListener("click", () => closeSA());
+          document.getElementById("soMod")?.addEventListener("click", (e) => {
+            if (e.target.classList.contains("soov")) closeSA();
+          });
+          document.getElementById("menuMod")?.addEventListener("click", (e) => {
+            if (e.target.classList.contains("mov")) closeMenu();
+          });
+          document.getElementById("cartMod")?.addEventListener("click", (e) => {
+            if (e.target.classList.contains("mov")) closeCart();
+          });
+        }
+        renderChips() {
+          const el = document.getElementById("chips");
+          if (!el) return;
+          el.innerHTML = CATS.map(
+            (c) =>
+              `<button class="chip${c.id === this.curCat ? " on" : ""}" data-cat="${c.id}"><span class="chip-e">${c.e}</span> ${c.n}</button>`,
+          ).join("");
+          el.querySelectorAll(".chip").forEach((b) =>
+            b.addEventListener("click", () => {
+              this.curCat = b.dataset.cat;
+              this.renderChips();
+              this.renderMain();
+            }),
+          );
+        }
+        renderMain() {
+          const mc = document.getElementById("mainContent");
+          if (!mc) return;
+          const catsToShow =
+            this.curCat === "all"
+              ? CATS.filter((c) => c.id !== "all" && CAT_COUNTS[c.id])
+              : CATS.filter((c) => c.id === this.curCat);
+          let html = "";
+          catsToShow.forEach((cat) => {
+            const items = P.filter((p) => p.cat === cat.id);
+            if (!items.length) return;
+            const feat = items.find((p) => p.feat);
+            const rest = items.filter((p) => p !== feat);
+            html += `<section class="sec"><div class="sec-h"><h2 class="sec-t">${cat.e} ${cat.n}</h2></div>`;
+            if (feat) {
+              html += `<div class="feat"><div class="feat-img"><img src="${im(feat.img)}" alt="${feat.n}" loading="lazy" decoding="async"></div><div class="feat-info"><h3 class="feat-name">${feat.n}</h3><p class="feat-desc">${feat.d}</p><div class="feat-bottom"><div><div class="feat-price">${feat.p} ₽</div><div class="feat-weight">${feat.w}</div></div><button class="feat-add" onclick="app.addCart('${feat.n.replace(/'/g, "\\'")}')"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"></path></svg> В корзину</button></div></div></div>`;
+            }
+            if (rest.length) {
+              html += `<div class="p-scroll">${rest.map((p) => this.card(p)).join("")}</div>`;
+            }
+            html += `</section>`;
+          });
+          if (!html && this.curCat !== "all") {
+            const items = P.filter((p) => p.cat === this.curCat);
+            html = `<section class="sec"><div class="sec-h"><h2 class="sec-t">${CATS.find((c) => c.id === this.curCat)?.e || ""} ${CATS.find((c) => c.id === this.curCat)?.n || ""}</h2></div><div class="p-scroll">${items.map((p) => this.card(p)).join("")}</div></section>`;
+          }
+          if (!html && this.curCat === "all") {
+            html = `<section class="sec"><div class="sec-h"><h2 class="sec-t">Меню</h2></div><div class="p-scroll">${P.slice(
+              0,
+              20,
+            )
+              .map((p) => this.card(p))
+              .join("")}</div></section>`;
+          }
+          mc.innerHTML = html;
+          mc.querySelectorAll(".p-card").forEach((card) =>
+            card.addEventListener("click", (e) => {
+              if (!e.target.closest(".p-plus") && !e.target.closest(".p-heart"))
+                this.openM(decodeURIComponent(card.dataset.n));
+            }),
+          );
+          mc.querySelectorAll(".p-plus").forEach((b) =>
+            b.addEventListener("click", (e) => {
+              e.stopPropagation();
+              this.addCart(decodeURIComponent(b.dataset.n));
+            }),
+          );
+          mc.querySelectorAll(".p-heart").forEach((b) =>
+            b.addEventListener("click", (e) => {
+              e.stopPropagation();
+              this.togFav(decodeURIComponent(b.dataset.n), b);
+            }),
+          );
+        }
+        card(p) {
+          return `<div class="p-card" data-n="${encodeURIComponent(p.n)}"><div class="p-img"><img src="${im(p.img)}" alt="${p.n}" loading="lazy" decoding="async" width="200" height="200"><button class="p-heart${this.fav.has(p.n) ? " on" : ""}" data-n="${encodeURIComponent(p.n)}"><svg viewBox="0 0 24 24" fill="${this.fav.has(p.n) ? "currentColor" : "none"}" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg></button></div><div class="p-info"><h3 class="p-name">${p.n}</h3><p class="p-desc">${p.d}</p><div class="p-foot"><div class="p-price">${p.p} ₽</div><button class="p-plus" data-n="${encodeURIComponent(p.n)}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"></path></svg></button></div></div></div>`;
+        }
+        addCart(name) {
+          const p = P.find((x) => x.n === name);
+          if (!p) return;
+          const it = this.cart.find((x) => x.n === name);
+          if (it) it.q++;
+          else this.cart.push({ ...p, q: 1 });
+          this.updCart();
+          this.toast(p.n + " добавлен");
+        }
+        updQ(name, d) {
+          const it = this.cart.find((x) => x.n === name);
+          if (!it) return;
+          it.q += d;
+          if (it.q <= 0) this.cart = this.cart.filter((x) => x.n !== name);
+          this.updCart();
+        }
+        updCart() {
+          const t = this.cart.reduce((s, i) => s + i.q, 0);
+          const bdg = document.getElementById("bnBdg");
+          if (bdg) {
+            bdg.textContent = t;
+            if (t > 0) bdg.style.display = "flex";
+            else bdg.style.display = "none";
+          }
+        }
+        openM(name) {
+          const p = P.find((x) => x.n === name);
+          if (!p) return;
+          document.getElementById("mImg").src =
+            p.img + "?w=600&h=400&fit=crop&auto=format&q=70";
+          document.getElementById("mName").textContent = p.n;
+          document.getElementById("mDesc").textContent =
+            p.d || "Состав уточняйте у оператора";
+          document.getElementById("mWeight").textContent = p.w;
+          document.getElementById("mPrice").textContent = p.p + " ₽";
+          document.getElementById("mAdd").onclick = () => {
+            this.addCart(name);
+            this.closeM();
+          };
+          document.getElementById("pMod").classList.add("on");
+          document.body.style.overflow = "hidden";
+        }
+        closeM() {
+          document.getElementById("pMod").classList.remove("on");
+          document.body.style.overflow = "";
+        }
+        toast(msg) {
+          const t = document.getElementById("toast");
+          document.getElementById("tMsg").textContent = msg;
+          t.classList.add("on");
+          clearTimeout(this._tt);
+          this._tt = setTimeout(() => t.classList.remove("on"), 2000);
+        }
+        togFav(name, btn) {
+          if (this.fav.has(name)) {
+            this.fav.delete(name);
+            btn.classList.remove("on");
+            btn.querySelector("svg").setAttribute("fill", "none");
+            this.toast("Удалено из избранного");
+          } else {
+            this.fav.add(name);
+            btn.classList.add("on");
+            btn.querySelector("svg").setAttribute("fill", "currentColor");
+            this.toast("В избранное");
+          }
+        }
+      }
+
+      function openSA(cat) {
+        app.soCat = cat || "all";
+        const m = document.getElementById("soMod");
+        const catInfo = CATS.find((c) => c.id === cat);
+        document.getElementById("soTt").textContent = catInfo
+          ? catInfo.e + " " + catInfo.n
+          : "Все блюда";
+        document.getElementById("soCats").innerHTML = CATS.map(
+          (c) =>
+            '<button class="soch' +
+            (app.soCat === c.id ? " on" : "") +
+            '" data-cat="' +
+            c.id +
+            '">' +
+            c.e +
+            " " +
+            c.n +
+            "</button>",
+        ).join("");
+        document.querySelectorAll(".soch").forEach((b) =>
+          b.addEventListener("click", () => {
+            app.soCat = b.dataset.cat;
+            renderSA();
+          }),
+        );
+        renderSA();
+        m.classList.add("on");
+        document.body.style.overflow = "hidden";
+      }
+      function renderSA() {
+        let items =
+          app.soCat === "all" ? P : P.filter((p) => p.cat === app.soCat);
+        document.getElementById("soCnt").textContent =
+          "Найдено: " + items.length + " блюд";
+        document
+          .querySelectorAll(".soch")
+          .forEach((c) =>
+            c.classList.toggle("on", c.dataset.cat === app.soCat),
+          );
+        const g = document.getElementById("soG");
+        g.innerHTML = items
+          .map(
+            (p) =>
+              `<div class="p-card" data-n="${encodeURIComponent(p.n)}"><div class="p-img"><img src="${im(p.img)}" alt="${p.n}" loading="lazy" decoding="async" width="200" height="200"><button class="p-heart${app.fav.has(p.n) ? " on" : ""}" data-n="${encodeURIComponent(p.n)}"><svg viewBox="0 0 24 24" fill="${app.fav.has(p.n) ? "currentColor" : "none"}" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg></button></div><div class="p-info"><h3 class="p-name">${p.n}</h3><p class="p-desc">${p.d}</p><div class="p-foot"><div class="p-price">${p.p} ₽</div><button class="p-plus" data-n="${encodeURIComponent(p.n)}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"></path></svg></button></div></div></div>`,
+          )
+          .join("");
+        g.querySelectorAll(".p-card").forEach((card) =>
+          card.addEventListener("click", (e) => {
+            if (!e.target.closest(".p-plus") && !e.target.closest(".p-heart"))
+              app.openM(decodeURIComponent(card.dataset.n));
+          }),
+        );
+        g.querySelectorAll(".p-plus").forEach((b) =>
+          b.addEventListener("click", (e) => {
+            e.stopPropagation();
+            app.addCart(decodeURIComponent(b.dataset.n));
+          }),
+        );
+        g.querySelectorAll(".p-heart").forEach((b) =>
+          b.addEventListener("click", (e) => {
+            e.stopPropagation();
+            app.togFav(decodeURIComponent(b.dataset.n), b);
+          }),
+        );
+      }
+      function closeSA() {
+        document.getElementById("soMod").classList.remove("on");
+        document.body.style.overflow = "";
+      }
+      function showFav() {
+        app.curCat = "all";
+        app.renderChips();
+        const mc = document.getElementById("mainContent");
+        const f = P.filter((p) => app.fav.has(p.n));
+        mc.innerHTML = `<section class="sec"><div class="sec-h"><h2 class="sec-t">❤️ Избранное</h2><span class="sec-lk" onclick="app.curCat='all';app.renderChips();app.renderMain()">← Назад</span></div>${f.length ? '<div class="p-scroll">' + f.map((p) => app.card(p)).join("") + "</div>" : '<p style="color:var(--t3);text-align:center;padding:40px 0">Нет избранных блюд</p>'}</section>`;
+        mc.querySelectorAll(".p-card").forEach((card) =>
+          card.addEventListener("click", (e) => {
+            if (!e.target.closest(".p-plus") && !e.target.closest(".p-heart"))
+              app.openM(decodeURIComponent(card.dataset.n));
+          }),
+        );
+        mc.querySelectorAll(".p-plus").forEach((b) =>
+          b.addEventListener("click", (e) => {
+            e.stopPropagation();
+            app.addCart(decodeURIComponent(b.dataset.n));
+          }),
+        );
+        mc.querySelectorAll(".p-heart").forEach((b) =>
+          b.addEventListener("click", (e) => {
+            e.stopPropagation();
+            app.togFav(decodeURIComponent(b.dataset.n), b);
+          }),
+        );
+      }
+      function scrollCart() {
+        showCart();
+      }
+      function openMenu() {
+        document.getElementById("menuMod").classList.add("on");
+        document.body.style.overflow = "hidden";
+      }
+      function closeMenu() {
+        document.getElementById("menuMod").classList.remove("on");
+        document.body.style.overflow = "";
+      }
+      function showCart() {
+        const m = document.getElementById("cartMod");
+        const items = document.getElementById("cartItems");
+        const cart = app.cart;
+        if (!cart.length) {
+          items.innerHTML =
+            '<div style="text-align:center;padding:40px 0;color:var(--t3)">🛒 Корзина пуста</div>';
+        } else {
+          const total = cart.reduce((s, i) => s + i.p * i.q, 0);
+          items.innerHTML = cart
+            .map(
+              (
+                i,
+              ) => `<div style="display:flex;gap:12px;padding:12px;background:var(--s2);border-radius:12px;margin-bottom:8px;align-items:center">
+<img src="${im100(i.img)}" style="width:56px;height:56px;border-radius:8px;object-fit:cover;flex-shrink:0" loading="lazy" decoding="async">
+<div style="flex:1;min-width:0">
+<div style="font-size:13px;font-weight:600;margin-bottom:2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${i.n}</div>
+<div style="font-size:12px;color:var(--t3)">${i.w}</div>
+</div>
+<div style="display:flex;align-items:center;gap:8px">
+<button onclick="app.updQ('${i.n.replace(/'/g, "\\'")}',-1);showCart()" style="width:28px;height:28px;background:var(--s3);border-radius:8px;display:flex;align-items:center;justify-content:center;color:var(--t2)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"></path></svg></button>
+<span style="font-size:14px;font-weight:600;min-width:20px;text-align:center">${i.q}</span>
+<button onclick="app.updQ('${i.n.replace(/'/g, "\\'")}',1);showCart()" style="width:28px;height:28px;background:var(--s3);border-radius:8px;display:flex;align-items:center;justify-content:center;color:var(--t2)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"></path></svg></button>
+<div style="font-size:14px;font-weight:700;color:var(--ac);min-width:60px;text-align:right">${i.p * i.q} ₽</div>
+</div>
+</div>`,
+            )
+            .join("");
+          items.innerHTML += `<div style="border-top:1px solid var(--bd);padding-top:16px;margin-top:8px">
+<div style="display:flex;justify-content:space-between;font-size:13px;color:var(--t2);margin-bottom:6px"><span>Доставка</span><span style="color:var(--ok)">Бесплатно</span></div>
+<div style="display:flex;justify-content:space-between;font-size:18px;font-weight:700;margin-bottom:16px"><span>Итого</span><span>${total} ₽</span></div>
+<a href="tel:89285522363" style="display:flex;align-items:center;justify-content:center;gap:8px;padding:14px;background:var(--ac);color:var(--oa);font-size:15px;font-weight:700;border-radius:12px;text-decoration:none">📞 Позвонить для заказа</a>
+<div style="text-align:center;margin-top:12px;font-size:12px;color:var(--t3)">8 (928) 552-23-63</div>
+</div>`;
+        }
+        m.classList.add("on");
+        document.body.style.overflow = "hidden";
+      }
+      function closeCart() {
+        document.getElementById("cartMod").classList.remove("on");
+        document.body.style.overflow = "";
+      }
+      document.addEventListener("DOMContentLoaded", () => {
+        window.app = new App();
+      });
+    </script>
+  </body>
+</html>
